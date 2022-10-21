@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab Your Coffee</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="coffeeTable">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Milk</th>
+                    <th>Cream</th>
+                    <th>Latte</th>
+                </tr>
+                <tr>
+                    <td>Espresso</td>
+                    <td>60</td>
+                    <td>75</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>125</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td>100</td>
+                    <td>125</td>
+                    <td>150</td>
+                </tr>
+            </table>
+        
+        <div class="selectCoffee">
+            <div>
+                <label for="cof">select your coffee:</label>
+                <select name="coffee" id="coffee" required>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Latte">Latte</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="cof">select your Add-on:</label>
+                <select name="addon" id="addOn" required>
+                    <option value="Milk">Milk</option>
+                    <option value="Cream">Cream</option>
+                    <option value="Latte">Latte</option>
+                </select>
+            </div>
+            <button id="addAgain">Add</button>
+            <button id="total">Total</button>
+        </div>
+    </div>
+    <div id="receipt">
+        <table class="receiptTable">
+            <tr>
+                <th>Product</th>
+                <th>AddOn</th>
+                <th>Price</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
